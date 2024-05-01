@@ -1,7 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function FaqSection() {
-  const style_title = "text-xl font-semibold [&[data-state=open]]:bg-gray-800 [&[data-state=open]]:text-white px-5 ";
+  const style_title = "text-xl hover:no-underline hover:bg-gray-100 font-medium [&[data-state=open]]:font-bold [&[data-state=open]]:bg-gray-800 [&[data-state=open]]:text-white px-5 ";
   const style_content = "bg-gray-800 text-white px-5";
   return (
     <>
