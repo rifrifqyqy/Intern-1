@@ -15,7 +15,7 @@ export default function ProdSection() {
       <div className="mx-32 flex flex-col gap-4 mt-16">
         <div className="flex justify-between">
           <h1 className="text-xl font-[600]">Rekomendasi untuk Anda</h1>
-          <Button variant="ghost" className="hover:bg-transparent hover:text-[#daa000] transition ease-linear 0.2s">
+          <Button variant="ghost" className="rounded-none hover:text-[#daa000] text-[#daa000] transition ease-linear 0.2s">
             Lihat Semua
           </Button>
         </div>
