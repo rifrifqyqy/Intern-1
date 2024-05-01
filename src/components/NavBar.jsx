@@ -22,7 +22,7 @@ export default function NavBar() {
             </li>
           </ul>
           <div className="flex gap-2 ">
-            <Button variant="outline" className="border-slate-800 text-[16px] font-bold h-8 hover:bg-black hover:text-white">
+            <Button variant="outline" className="border-slate-800 text-[16px] bg-transparent font-bold h-8 hover:bg-black hover:text-white">
               Login
             </Button>
             <Button variant="default" className="font-bold text-[16px] h-8">
