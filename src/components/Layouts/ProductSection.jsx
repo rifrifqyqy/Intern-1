@@ -12,7 +12,7 @@ export default function ProdSection() {
   }, []);
   return (
     <>
-      <div className="mx-32 flex flex-col gap-4">
+      <div className="mx-32 flex flex-col gap-4 mt-16">
         <div className="flex justify-between">
           <h1 className="text-xl font-[600]">Rekomendasi untuk Anda</h1>
           <Button variant="ghost" className="hover:bg-transparent hover:text-[#daa000] transition ease-linear 0.2s">
