@@ -1,3 +1,4 @@
+import FaqSection from "./components/Layouts/FaqSection";
 import FooterSection from "./components/Layouts/FooterSection";
 import HeroSection from "./components/Layouts/HeroSection";
 import ProdSection from "./components/Layouts/ProductSection";
@@ -9,6 +10,7 @@ function App() {
       <NavigationBar />
       <HeroSection />
       <ProdSection />
+      <FaqSection/>
       <FooterSection />
     </>
   );
