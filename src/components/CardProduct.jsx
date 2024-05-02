@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function CardProduct(props) {
-  const { children } = props;
+  const { children, to } = props;
   return (
     <>
-      <div className="w-[180px] h-auto flex flex-col">{children}</div>
+      <Link to={to}>
+        <div className="w-[180px] h-auto flex flex-col">{children}</div>
+      </Link>
     </>
   );
 }

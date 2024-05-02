@@ -3,13 +3,17 @@ import "../index.css";
 
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import PapanIklan from "./papanIklan";
+import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
   return (
     <>
       <PapanIklan />
       <nav className="sticky top-0  flex z-50 w-full justify-between px-12 bg-white items-center py-4 backdrop-blur-lg backdrop-filter bg-opacity-75">
-        <div className="border-2 px-5 py-2 border-gray-700">Company Logo</div>
+        <Link to="/">
+          <div className="border-2 px-5 py-2 border-gray-700">Company Logo</div>
+        </Link>
+
         <div className="flex items-center gap-8">
           <ul className="flex gap-8 text-[16px] items-center">
             <li>

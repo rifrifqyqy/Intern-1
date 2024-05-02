@@ -2,6 +2,7 @@ import FaqSection from "./components/Layouts/FaqSection";
 import FooterSection from "./components/Layouts/FooterSection";
 import HeroSection from "./components/Layouts/HeroSection";
 import ProdSection from "./components/Layouts/ProductSection";
+import SidebarRightLayout from "./components/Layouts/SideRightLayouts";
 import NavigationBar from "./components/NavigationBar";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <NavigationBar />
       <HeroSection />
       <ProdSection />
-      <FaqSection/>
+      <FaqSection />
       <FooterSection />
     </>
   );
