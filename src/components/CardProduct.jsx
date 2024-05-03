@@ -15,7 +15,7 @@ function Header(props) {
   const { src } = props;
   return (
     <div className="w-full h-[200px]">
-      <img src={src} alt="" className="w-full h-full object-contain" />
+      <img src={src} alt="" className="w-full h-full object-cover" />
     </div>
   );
 }
@@ -26,7 +26,7 @@ function Body(props) {
     <div className="flex flex-col justify-between">
       <h1 className="text-[18px] line-clamp-2">{title}</h1>
       <p className=" text-gray-400 text-[14px]">Lowest ask</p>
-      <h2 className="font-semibold text-[24px]">{price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</h2>
+      <h2 className="font-semibold text-[24px]">{price.toLocaleString("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 })}</h2>
     </div>
   );
 }

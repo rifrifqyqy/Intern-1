@@ -19,3 +19,14 @@ export const getDetailProduct = (id, callback) => {
       console.log(err);
     });
 };
+
+export const getCourses = (callback) => {
+  axios
+    .get("http://0.tcp.ap.ngrok.io:12543/course")
+    .then((res) => {
+      callback(res.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};

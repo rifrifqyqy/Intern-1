@@ -1,13 +1,22 @@
-import { getProduct } from "@/services/product.service";
+import { getCourses, getProduct } from "@/services/product.service";
 import CardProduct from "../CardProduct";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import axios from "axios";
 export default function ProdSection() {
   const [products, setProducts] = useState([]);
+  const [courses, setCourses] = useState([]);
 
   useEffect(() => {
     getProduct((data) => {
       setProducts(data);
+    });
+  }, []);
+
+  useEffect(() => {
+    getCourses((data) => {
+      console.log(data);
+      setCourses(data.data_course);
     });
   }, []);
 
@@ -21,11 +30,11 @@ export default function ProdSection() {
           </Button>
         </div>
         <div className=" grid grid-cols-6 gap-8 justify-items-center">
-          {products.length > 0 &&
-            products.slice(0, 6).map((product) => (
+          {courses.length > 0 &&
+            courses.slice(0, 6).map((product) => (
               <CardProduct key={product.id} to={`/product-details/${product.id}`}>
-                <CardProduct.header src={product.image}></CardProduct.header>
-                <CardProduct.body title={product.title} price={product.price}></CardProduct.body>
+                <CardProduct.header src={product.thumb}></CardProduct.header>
+                <CardProduct.body title={product.title} price={parseInt(product.price)}></CardProduct.body>
               </CardProduct>
             ))}
         </div>
